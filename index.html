@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>signup/login</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Sign-In Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sign-In Button at the Top Right Corner -->
+    <button id="signin-btn" onclick="openModal()">Sign In</button>
+
+    <!-- Login/Signup Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Please Login To Continue</h2>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab('signin')">Sign In</button>
+                <button class="tab-link" onclick="openTab('signup')">Sign Up</button>
+            </div>
+            
+            <!-- Sign-In Form -->
+            <form id="signin" class="form active">
+                <div class="form-group">
+                    <label for="signin-email">E-mail</label>
+                    <input type="email" id="signin-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password</label>
+                    <input type="password" id="signin-password" name="password" required>
+                </div>
+                <button type="submit" class="form-btn">Login</button>
+            </form>
+
+            <!-- Sign-Up Form -->
+            <form id="signup" class="form">
+                <div class="form-group">
+                    <label for="signup-email">E-mail</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="institute">Institutes/Organizations</label>
+                    <input type="text" id="institute" name="institute" required>
+                </div>
+                <button type="submit" class="form-btn">Sign Up</button>
+            </form>
+
+            <div class="social-signin">
+                <p>Or sign in with</p>
+                <button class="social-btn google">Google</button>
+                <button class="social-btn facebook">Facebook</button>
+                <button class="social-btn linkedin">LinkedIn</button>
+                <button class="social-btn github">GitHub</button>
+            </div>  
+          <div align="center" id="result">R</div>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
