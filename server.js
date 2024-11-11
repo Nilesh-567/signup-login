@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(__dirname));
+app.use(express.static(__dirname , "index.html"));
 
 // MongoDB connection URL and database name
 const dbURI = "mongodb+srv://mongodb:Nilesh123@mydatabase.sgxomt2.mongodb.net/Vercel";
