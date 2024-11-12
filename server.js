@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname , "index.html"));
 
 // MongoDB connection URL and database name
-const dbURI = "mongodb+srv://mongodb:Nilesh123@mydatabase.sgxomt2.mongodb.net/Vercel";
+const dbURI = process.env.MONGO_URI || "mongodb+srv://mongodb:Nilesh123@mydatabase.sgxomt2.mongodb.net/Vercel";
 
 mongoose.connect(dbURI, {
     useNewUrlParser: true,
